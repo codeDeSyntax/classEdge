@@ -3,144 +3,214 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Educational System Documentation</title>
+    <title>ClassEdge Learning Documentation</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
     />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap");
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
   </head>
-  <body class="bg-gray-100 text-gray-900">
+  <body class="bg-gray-50 text-gray-800">
     <!-- Header Section -->
-    <header class="bg-blue-600 text-white py-6 shadow-lg px-3">
-      <div class="container mx-auto text-center">
-        <h1 class="text-xl md:text-4xl font-bold">
-          ClassEdge learning Idea Documentation
+    <header
+      class="bg-gradient-to-r from-gray-800 to-gray-800 text-white py-12 shadow-md"
+    >
+      <div class="container mx-auto px-4 text-center">
+        <h1 class="text-3xl md:text-5xl font-bold mb-2">
+          ClassEdge Learning Documentation
         </h1>
-        <span class="flex justify-center items-center">
-          <p class="mt-2 text-lg">
-            A platform to create a feel of in-person class sessions 
-          </p>
-          <img src="kickstart.png" alt="" class="h-10" />
-        </span>
+        <p class="text-xl md:text-2xl font-light">
+          Creating immersive in-person class experiences
+        </p>
       </div>
     </header>
 
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-10">
+      <div class="container mx-auto px-4">
+        <ul class="flex space-x-6 py-4 overflow-x-auto">
+          <li>
+            <a href="#overview" class="text-gray-800">Overview</a>
+          </li>
+          <li>
+            <a href="#structure" class="text-gray-800">Structure</a>
+          </li>
+          <li>
+            <a href="#instructor" class="text-gray-800"
+              >Instructor Experience</a
+            >
+          </li>
+          <li>
+            <a href="#student" class="text-gray-800">Student Experience</a>
+          </li>
+          <li>
+            <a href="#features" class="text-gray-800">Features</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
     <!-- Main Content Section -->
     <main
-      class="container mx-auto my-10 p-6 bg-white rounded-lg shadow-md md:w-3/4"
+      class="container mx-auto my-12 p-6 bg-white rounded-lg shadow-sm max-w-4xl"
     >
-      <section>
-        <h2 class="text-3xl font-semibold mb-4">Overview</h2>
+      <section id="overview" class="mb-12">
+        <h2 class="text-3xl font-semibold mb-4 text-gray-800">Overview</h2>
         <p class="text-lg leading-relaxed">
-          This system is designed for educational <i>institutions</i>,
-          specifically for <i>instructors</i> and <i>lecturers</i>, to create
-          interactive and engaging lessons that closely mimic the experience of
-          in-person classroom sessions. It is a versatile platform that can
-          cater to all programs offered by the <i>institution</i>.
+          ClassEdge is an innovative educational platform designed for
+          <span class="font-semibold">institutions</span>,
+          <span class="font-semibold">instructors</span>, and
+          <span class="font-semibold">lecturers</span> to create interactive and
+          engaging lessons that closely mimic the experience of in-person
+          classroom sessions. Our versatile system caters to all programs
+          offered by educational institutions, revolutionizing the way we
+          approach online learning.
         </p>
       </section>
 
-      <section class="mt-8">
-        <h2 class="text-3xl font-semibold mb-4">
+      <section id="structure" class="mb-12">
+        <h2 class="text-3xl font-semibold mb-4 text-gray-800">
           Program and Course Structure
         </h2>
-        <p class="text-lg leading-relaxed">
-          The system supports multiple programs, with each program containing
-          several courses. <i>Instructors</i> have full control over the content
-          creation process, allowing them to design comprehensive lessons that
-          can include various elements such as:
+        <p class="text-lg leading-relaxed mb-4">
+          Our system supports multiple programs, each containing several
+          courses. Instructors have full control over the content creation
+          process, allowing them to design comprehensive lessons that can
+          include various elements such as:
         </p>
+        <ul class="list-disc list-inside mt-4 text-lg pl-4">
+          <li>Multimedia content (images, videos, interactive elements)</li>
+          <li>Text-based lectures and explanations</li>
+          <li>Quizzes and assessments</li>
+          <li>Discussion forums and collaborative tools</li>
+        </ul>
         <p class="text-lg leading-relaxed mt-4">
-          <i>Instructors</i> can use these tools in any order they prefer,
-          making the lesson creation process flexible and adaptable to their
-          teaching style.
+          Instructors can use these tools in any order they prefer, making the
+          lesson creation process flexible and adaptable to their teaching
+          style.
         </p>
       </section>
 
-      <section class="mt-8">
-        <h2 class="text-3xl font-semibold mb-4">Instructor Experience</h2>
-        <p class="text-lg leading-relaxed">
-          The <i>instructor</i> experience is at the core of this system.
-          <i>Instructors</i>
-          have the freedom to craft lessons step by step, with tools available
-          for every aspect of lesson creation. This includes:
+      <section id="instructor" class="mb-12">
+        <h2 class="text-3xl font-semibold mb-4 text-gray-800">
+          Instructor Experience
+        </h2>
+        <p class="text-lg leading-relaxed mb-4">
+          The instructor experience is at the core of ClassEdge. Our platform
+          empowers educators with:
         </p>
-        <ul class="list-disc list-inside mt-4 text-lg">
+        <ul class="list-disc list-inside mt-4 text-lg pl-4">
           <li>Customizable lesson flow without a strict order</li>
-          <li>Integration of multimedia content</li>
+          <li>Seamless integration of multimedia content</li>
           <li>Real-time preview of lessons</li>
-          <li>Interactive tools to enhance <i>student</i> engagement</li>
+          <li>Interactive tools to enhance student engagement</li>
+          <li>Analytics dashboard to track student progress</li>
         </ul>
       </section>
 
-      <section class="mt-8">
-        <h2 class="text-3xl font-semibold mb-4">Student Experience</h2>
-        <p class="text-lg leading-relaxed">
-          For <i>students</i>, the system offers a seamless and intuitive
-          learning experience. <i>Students</i> can:
+      <section id="student" class="mb-12">
+        <h2 class="text-3xl font-semibold mb-4 text-gray-800">
+          Student Experience
+        </h2>
+        <p class="text-lg leading-relaxed mb-4">
+          For students, ClassEdge offers a seamless and intuitive learning
+          journey:
         </p>
-        <ul class="list-disc list-inside mt-4 text-lg">
-          <li>Search for their program from a wide range of offerings</li>
-          <li>Select a course within the chosen program</li>
-          <li>
-            Engage with lessons that have been carefully prepared by their
-            <i>instructors</i>
-          </li>
-          <li>Take quizzes generated by AI based on the lesson content</li>
+        <ul class="list-disc list-inside mt-4 text-lg pl-4">
+          <li>Intuitive program and course selection</li>
+          <li>Engaging with instructor-prepared lessons</li>
+          <li>Participation in AI-generated quizzes based on lesson content</li>
+          <li>Progress tracking and performance insights</li>
+          <li>Collaborative learning through discussion forums</li>
         </ul>
-        <p class="text-lg leading-relaxed mt-4">
-          This tailored experience ensures that <i>students</i> can access the
-          content they need and learn at their own pace while staying engaged
-          through interactive elements.
-        </p>
       </section>
 
       <img
         src="EdgeErd.jpeg"
-        alt="Student Experience"
-        class="mt-8"  
+        alt="ClassEdge System Architecture"
+        class="w-full h-auto rounded-lg shadow-md mb-8"
       />
 
-      <section class="mt-8">
-        <h2 class="text-3xl font-semibold mb-4">Features</h2>
-        <p class="text-lg leading-relaxed">
-          This system includes a variety of powerful features:
-        </p>
-        <ul class="list-disc list-inside mt-4 text-lg">
-          <li>Multi-program and multi-course support</li>
-          <li>Flexible and customizable lesson creation tools</li>
-          <li>Multimedia content integration (images, videos, etc.)</li>
-          <li>AI-powered quiz generation</li>
-          <li>
-            Cross-<i>institution</i> adaptability for a tailored experience
-          </li>
-        </ul>
+      <section id="features" class="mb-12">
+        <h2 class="text-3xl font-semibold mb-4 text-gray-800">Key Features</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+            <h3 class="text-xl font-semibold mb-2 text-gray-700">
+              Multi-program Support
+            </h3>
+            <p>
+              Accommodate various educational programs within a single platform.
+            </p>
+          </div>
+          <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+            <h3 class="text-xl font-semibold mb-2 text-gray-700">
+              Flexible Lesson Creation
+            </h3>
+            <p>
+              Customizable tools for creating engaging and interactive lessons.
+            </p>
+          </div>
+          <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+            <h3 class="text-xl font-semibold mb-2 text-gray-700">
+              AI-powered Quizzes
+            </h3>
+            <p>
+              Automatically generate quizzes based on lesson content for
+              effective assessment.
+            </p>
+          </div>
+          <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+            <h3 class="text-xl font-semibold mb-2 text-gray-700">
+              Cross-institution Adaptability
+            </h3>
+            <p>
+              Tailored experiences for different educational institutions and
+              their unique needs.
+            </p>
+          </div>
+        </div>
       </section>
 
-      <section class="mt-8">
-        <p class="text-3xl font-semibold mb-4">inspiration source (In looks)</p>
-        <a
-          href="https://www.tutorialspoint.com/dbms/relational_data_model.htm"
-          class="text-lg leading-relaxed mt-4 underline text-blue-500"
-          >inspiration in looks</a
-        >
-      </section>
-
-      <section class="mt-8">
-        <h2 class="text-3xl font-semibold mb-4">Conclusion</h2>
+      <section class="mb-12">
+        <h2 class="text-3xl font-semibold mb-4 text-gray-800">Conclusion</h2>
         <p class="text-lg leading-relaxed">
-          This educational system aims to the organize lesson content online to closely mimic the traditional in-person sessions.Students can on their own go through prepared lessons before in-person meetings with tutors(if there should). With its powerful tools for
-          <i>instructors</i> and an intuitive experience for <i>students</i>, it
-          promises to enhance the overall learning process across various
-          educational <i>institutions</i>.
+          ClassEdge aims to revolutionize online education by closely mimicking
+          traditional in-person sessions. With its powerful tools for
+          instructors and an intuitive experience for students, it promises to
+          enhance the overall learning process across various educational
+          institutions. Join us in shaping the future of education!
         </p>
       </section>
     </main>
 
     <!-- Footer Section -->
-    <footer class="bg-blue-600 text-white py-4 mt-10">
-      <div class="container mx-auto text-center">
-        <p>&copy; 2024 Educational System. All rights reserved.</p>
+    <footer class="bg-gray-800 text-white py-8">
+      <div class="container mx-auto px-4 text-center">
+        <p class="mb-2">&copy; 2024 ClassEdge Learning. All rights reserved.</p>
+        <p class="text-sm text-gray-400">
+          Empowering education through innovation
+        </p>
       </div>
     </footer>
   </body>
